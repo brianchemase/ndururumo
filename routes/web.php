@@ -28,4 +28,18 @@ Route::group(['prefix' => 'admins'], function() {
 
     //clients register
     Route::get('/RegisterClient', [DashboardController::class, 'clientsregister'])->name('RegisterClientspage');
+
+
+    //clients list
+    Route::get('/ClientList', [DashboardController::class, 'clients_table'])->name('ClientsListpage');
+
+
+
+    //billing
+    Route::get('/BillingTab', [DashboardController::class, 'billing'])->name('billingListpage');
+
+
+
+    //payment
+    Route::get('/PaymentTab', [DashboardController::class, 'payment'])->name('paymentregistrationpage');
 });

@@ -42,4 +42,26 @@ class DashboardController extends Controller
     {
         return view('account.registerClients');
     }
+
+    public function clients_table()
+    {
+
+
+
+        return view('account.clientsTable');
+    }
+
+
+    public function billing()
+    {
+
+
+        return view('account.billing');
+    }
+
+    public function payment()
+    {
+
+        return view ('account.paymentregistration');
+    }
 }

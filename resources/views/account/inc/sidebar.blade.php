@@ -26,7 +26,7 @@
                         </a>
 					</li>
 					<li class="sidebar-item">
-						<a class="sidebar-link" href="#">
+						<a class="sidebar-link" href="{{route('ClientsListpage')}}">
                             <i class="align-middle" data-feather="airplay"></i> <span class="align-middle">View clients</span>
                         </a>
 					</li>
@@ -35,7 +35,7 @@
 						Bill Management
 					</li>
 					<li class="sidebar-item">
-						<a class="sidebar-link" href="#">
+						<a class="sidebar-link" href="{{route('billingListpage')}}">
                             <i class="align-middle" data-feather="grid"></i> <span class="align-middle">Billing</span>
                         </a>
 					</li>
@@ -45,7 +45,7 @@
 					</li>
 
 					<li class="sidebar-item">
-						<a class="sidebar-link" href="#">
+						<a class="sidebar-link" href="{{route('paymentregistrationpage')}}">
                             <i class="align-middle" data-feather="grid"></i> <span class="align-middle">Payment Registration</span>
                         </a>
 					</li>

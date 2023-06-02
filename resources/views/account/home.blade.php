@@ -7,7 +7,7 @@
 <main class="content">
 				<div class="container-fluid p-0">
 
-					<h1 class="h3 mb-3"><strong>Clients Loaning</strong> Dashboard</h1>
+					<h1 class="h3 mb-3"><strong>Ndururumo CBO Water</strong> Dashboard</h1>
 
 					<div class="row">
 						<div class="col-sm-6 col-xl-3">
@@ -15,7 +15,7 @@
 								<div class="card-body">
 									<div class="row">
 										<div class="col mt-0">
-											<h5 class="card-title">Loan Balance Amount</h5>
+											<h5 class="card-title">Pending Bills</h5>
 										</div>
 
 										<div class="col-auto">
@@ -27,7 +27,7 @@
 								
 									<h1 class="mt-1 mb-3">KES 15325</h1>
 									<div class="mb-0">
-										<span class="text-muted">Current Loan Balance</span>
+										<span class="text-muted">Current Pending Bills</span>
 									</div>
 								</div>
 							</div>
@@ -37,7 +37,7 @@
 								<div class="card-body">
 									<div class="row">
 										<div class="col mt-0">
-											<h5 class="card-title">Amount paid</h5>
+											<h5 class="card-title">Active Meters</h5>
 										</div>
 
 										<div class="col-auto">
@@ -47,9 +47,9 @@
 										</div>
 									</div>
 								
-									<h1 class="mt-1 mb-3">KES 12000</h1>
+									<h1 class="mt-1 mb-3"> 150</h1>
 									<div class="mb-0">
-										<span class="text-muted">Loan Repayment received</span>
+										<span class="text-muted">Total active metres</span>
 									</div>
 								</div>
 							</div>
@@ -59,7 +59,7 @@
 								<div class="card-body">
 									<div class="row">
 										<div class="col mt-0">
-											<h5 class="card-title">Active Loans</h5>
+											<h5 class="card-title">Amount Paid</h5>
 										</div>
 
 										<div class="col-auto">
@@ -72,7 +72,7 @@
 									
 									<div class="mb-0">
 										
-										<span class="text-muted">Total active loans</span>
+										<span class="text-muted">Total Amount Registered</span>
 									</div>
 								</div>
 							</div>
@@ -82,7 +82,7 @@
 								<div class="card-body">
 									<div class="row">
 										<div class="col mt-0">
-											<h5 class="card-title">Complete loans</h5>
+											<h5 class="card-title">Monthly Payment</h5>
 										</div>
 
 										<div class="col-auto">
@@ -95,7 +95,7 @@
 									<h1 class="mt-1 mb-3">600</h1>
 									<div class="mb-0">
 										
-										<span class="text-muted">Number of complete loans</span>
+										<span class="text-muted">Total monthly Amount registered</span>
 									</div>
 								</div>
 							</div>

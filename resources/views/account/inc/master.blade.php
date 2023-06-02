@@ -14,10 +14,14 @@
 
 	<link rel="canonical" href="https://demo-basic.adminkit.io/" />
 
-	<title>SISDO | Clients dashboard</title>
+	<title>Water Managemement System</title>
 
-	<link href="css/app.css" rel="stylesheet">
+	<!-- <link href="css/app.css" rel="stylesheet"> -->
     <link href="{{asset('clientsdash/css/app.css')}}" rel="stylesheet">
+	<!-- BEGIN SETTINGS -->
+	<script src="js/settings.js"></script>
+	<!-- BEGIN SETTINGS -->
+	<script src="{{asset('clientsdash/js/settings.js')}}"></script>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
@@ -47,6 +51,19 @@
 
 	
     <script src="{{asset('clientsdash/js/app.js')}}"></script>
+	<script src="{{asset('clientsdash/js/datatables.js')}}"></script>
+
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			// Datatables with Buttons
+			var datatablesButtons = $("#datatables-buttons").DataTable({
+				responsive: true,
+				lengthChange: !1,
+				buttons: ["copy", "print"]
+			});
+			datatablesButtons.buttons().container().appendTo("#datatables-buttons_wrapper .col-md-6:eq(0)");
+		});
+	</script>
 
 	<script>
 		document.addEventListener("DOMContentLoaded", function() {

@@ -1,4 +1,4 @@
-@extends('clients.inc.master')
+@extends('account.inc.master')
 
 @section('title','Dashboard')
 

@@ -22,5 +22,7 @@ Route::get('/', function () {
 Route::group(['prefix' => 'admins'], function() {
 
     Route::get('/', [DashboardController::class, 'home'])->name('dash');
-    Route::get('/blank', [DashboardController::class, 'home'])->name('BlankPage');
+    Route::get('/blank', [DashboardController::class, 'blank'])->name('BlankPage');
+    Route::get('/form', [DashboardController::class, 'form'])->name('FormPage');
+    Route::get('/table', [DashboardController::class, 'table'])->name('TablePage');
 });

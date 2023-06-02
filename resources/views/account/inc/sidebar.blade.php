@@ -64,6 +64,18 @@
                         </a>
 					</li>
 
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="{{route('FormPage')}}">
+                            <i class="align-middle" data-feather="user"></i> <span class="align-middle">Form PAge</span>
+                        </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="{{route('TablePage')}}">
+                            <i class="align-middle" data-feather="user"></i> <span class="align-middle">Table PAge</span>
+                        </a>
+					</li>
+
 
 					<li class="sidebar-header">
 						Plugins & Addons

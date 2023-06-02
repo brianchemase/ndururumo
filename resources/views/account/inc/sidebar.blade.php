@@ -21,13 +21,13 @@
 
 	
 					<li class="sidebar-item">
-						<a class="sidebar-link" href="#">
+						<a class="sidebar-link" href="{{route('RegisterClientspage')}}">
                             <i class="align-middle"data-feather="user"></i> <span class="align-middle">Register Clients</span>
                         </a>
 					</li>
 					<li class="sidebar-item">
 						<a class="sidebar-link" href="#">
-                            <i class="align-middle" data-feather="grid"></i> <span class="align-middle">View clients</span>
+                            <i class="align-middle" data-feather="airplay"></i> <span class="align-middle">View clients</span>
                         </a>
 					</li>
 

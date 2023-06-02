@@ -37,4 +37,9 @@ class DashboardController extends Controller
 
         return view('account.table');
     }
+
+    public function clientsregister()
+    {
+        return view('account.registerClients');
+    }
 }

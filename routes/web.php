@@ -25,4 +25,7 @@ Route::group(['prefix' => 'admins'], function() {
     Route::get('/blank', [DashboardController::class, 'blank'])->name('BlankPage');
     Route::get('/form', [DashboardController::class, 'form'])->name('FormPage');
     Route::get('/table', [DashboardController::class, 'table'])->name('TablePage');
+
+    //clients register
+    Route::get('/RegisterClient', [DashboardController::class, 'clientsregister'])->name('RegisterClientspage');
 });

@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\DashboardController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,4 +16,11 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+
+Route::group(['prefix' => 'admins'], function() {
+
+    Route::get('/', [DashboardController::class, 'home'])->name('dash');
+    Route::get('/blank', [DashboardController::class, 'home'])->name('BlankPage');
 });

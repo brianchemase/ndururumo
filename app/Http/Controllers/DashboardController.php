@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\ClientsModel;
 use Illuminate\Http\Request;
 
 class DashboardController extends Controller
@@ -46,9 +47,11 @@ class DashboardController extends Controller
     public function clients_table()
     {
 
+        $clients_list= ClientsModel::all();
 
+       // return $clients_list;
 
-        return view('account.clientsTable');
+        return view('account.clientsTable', compact('clients_list'));
     }
 
 

@@ -38,8 +38,12 @@
 												<div class="input-group-text">Get Client</div>
 												<select class="form-select" id="validationDefault04" required>
 													<option selected disabled value="">Choose...</option>
-													<option> Area 1...</option>
-													<option> Area 2...</option>
+													@forelse ($clients_list as $data)
+													<!-- <option value="{{ $data->id_number }}">{{ $data->first_name }} {{ $data->middle_name }} {{ $data->last_name }} - {{ $data->loan_id }}</option> -->
+													<option value="{{ $data->mtr_no }},{{ $data->id }}">{{ $data->client_names }}  - {{ $data->mtr_no }}</option>
+													@empty
+													<option value="" disabled>No Active Loans</option>
+													@endforelse
 												</select>
 												<!-- <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Username"> -->
 											</div>

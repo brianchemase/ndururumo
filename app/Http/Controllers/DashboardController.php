@@ -102,7 +102,8 @@ $prev_reading = DB::table('tbl_billing')->orderBy('id', 'desc')->where('mtr_no',
 
     public function payment()
     {
+        $clients_list= ClientsModel::all();
 
-        return view ('account.paymentregistration');
+        return view ('account.paymentregistration', compact('clients_list'));
     }
 }

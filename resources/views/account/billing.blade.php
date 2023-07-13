@@ -94,7 +94,7 @@
 									<form class="row g-3">
 										<div class="col-md-6">
 											<label for="validationDefault01" class="form-label">Previouse Reading</label>
-											<input type="number" class="form-control" id="validationDefault01" name="prev" placeholder="{{$prev_reading}}" required>
+											<input type="number" class="form-control" id="validationDefault01" name="prev" value="{{$prev_reading}}" required>
 										</div>
 										<div class="col-md-6">
 											<label for="validationDefault02" class="form-label">Current Reading</label>
@@ -102,13 +102,13 @@
 										</div>
 										<div class="col-md-4">
 											<label for="validationDefault02" class="form-label">ID No/Passport Number</label>
-											<input type="text" class="form-control" id="validationDefault02" name="idno" placeholder="{{$client_id_no}}" required>
+											<input type="text" class="form-control" id="validationDefault02" name="idno" value="{{$client_id_no}}" required>
 										</div>
 										<div class="col-md-4">
 											<label for="validationDefaultUsername" class="form-label">Metre No</label>
 											<div class="input-group">
 												<span class="input-group-text" id="inputGroupPrepend2">@</span>
-												<input type="text" class="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" name="MetreNo" placeholder="{{$mtr_no}}"
+												<input type="text" class="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" name="MetreNo" value="{{$mtr_no}}"
 													required>
 											</div>
 										</div>

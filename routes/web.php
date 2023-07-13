@@ -18,7 +18,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-
+Auth::routes();
+// Route User
+Route::middleware(['auth','user-role:admin'])->group(function()
+{
 Route::group(['prefix' => 'admins'], function() {
 
     Route::get('/', [DashboardController::class, 'home'])->name('dash');
@@ -42,4 +45,14 @@ Route::group(['prefix' => 'admins'], function() {
 
     //payment
     Route::get('/PaymentTab', [DashboardController::class, 'payment'])->name('paymentregistrationpage');
+});
+});
+//Auth::routes();
+
+//Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+// Route Admin
+Route::middleware(['auth','user-role:user'])->group(function()
+{
+    Route::get("/admin/home",[HomeController::class, 'adminHome'])->name("home");
 });

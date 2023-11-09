@@ -58,9 +58,7 @@ class DashboardController extends Controller
 
     public function billing(Request $request)
     {
-        $clients_list= ClientsModel::all();
-
-      
+        $clients_list= ClientsModel::all();   
         //return $clients_list;
         if(isset($_GET['q']))
         {    
@@ -86,16 +84,15 @@ class DashboardController extends Controller
 
             $running_balance=$client_id_no=$loan_id_no=$phone_no=$client_name=$loanId=0;
 
-//$loan_id_no = DB::table('loan_repayments')->orderBy('id', 'desc')->where('id_number', $id_no)->select('loan_id')->first()->loan_id;
-$prev_reading = DB::table('tbl_billing')->orderBy('id', 'desc')->where('mtr_no', $mtr_no)->select('last_reading')->first()->last_reading;
-$client_id_no = DB::table('tbl_billing')->orderBy('id', 'desc')->where('mtr_no', $mtr_no)->select('id_no')->first()->id_no;
-$prev_reading = DB::table('tbl_billing')->orderBy('id', 'desc')->where('mtr_no', $mtr_no)->select('last_reading')->first()->last_reading;
-//return $prev_reading;
+            //$loan_id_no = DB::table('loan_repayments')->orderBy('id', 'desc')->where('id_number', $id_no)->select('loan_id')->first()->loan_id;
+            $prev_reading = DB::table('tbl_billing')->orderBy('id', 'desc')->where('mtr_no', $mtr_no)->select('last_reading')->first()->last_reading;
+            $client_id_no = DB::table('tbl_billing')->orderBy('id', 'desc')->where('mtr_no', $mtr_no)->select('id_no')->first()->id_no;
+            $prev_reading = DB::table('tbl_billing')->orderBy('id', 'desc')->where('mtr_no', $mtr_no)->select('last_reading')->first()->last_reading;
+            //return $prev_reading;
 
 
             return view('account.billing', ['results'=>$results], compact( 'clients_list','date','mtr_no','client_id_no','prev_reading','phone_no','client_name','loanId'));
         }
-
 
         return view('account.billing', compact('clients_list'));
     }

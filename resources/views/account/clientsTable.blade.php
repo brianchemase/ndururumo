@@ -56,7 +56,7 @@
 												<td>{{ $data->email }}</td>
 												<td>{{ $data->mtr_no }}</td>
 												<td>{{ $data->area }}</td>
-												<td>{{ $data->staus }}</td>
+												<td>{{ $data->status }}</td>
 												<td> {{ \Carbon\Carbon::parse($data->registration_date)->format('d-m-Y') }}</td>
 												
 											</tr>

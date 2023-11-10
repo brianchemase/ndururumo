@@ -108,7 +108,7 @@
                            </div>
                            <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12">
                               <div class="images_box">
-                                 <figure><img src="{{asset('landingfiles/images/img2.png')}}"></figure>
+                                 <figure><img src="{{asset('landingfiles/images/waterimg.jpg')}}" width="50"></figure>
                               </div>
                            </div>
                         </div>

@@ -20,7 +20,7 @@
 	<link href="{{asset('clientsdash/css/app.css')}}" rel="stylesheet">
 
 	<!-- BEGIN SETTINGS -->
-	<script src="{{asset('clientsdash/js/settings.js')}}"></script>
+	<!-- <script src="{{asset('clientsdash/js/settings.js')}}"></script> -->
 	<!-- END SETTINGS -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120946860-10"></script>
 <script>

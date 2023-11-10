@@ -1,77 +1,153 @@
-@extends('layouts.app')
 
-@section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Register') }}</div>
+<!DOCTYPE html>
+<html lang="en">
 
-                <div class="card-body">
-                    <form method="POST" action="{{ route('register') }}">
-                        @csrf
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Responsive Admin &amp; Dashboard Template based on Bootstrap 5">
+	<meta name="author" content="AdminKit">
+	<meta name="keywords" content="adminkit, bootstrap, bootstrap 5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web">
 
-                        <div class="row mb-3">
-                            <label for="name" class="col-md-4 col-form-label text-md-end">{{ __('Name') }}</label>
+	<link rel="shortcut icon" href="{{asset('clientsdash/img/icons/icon-48x48.png')}}" />
 
-                            <div class="col-md-6">
-                                <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+	<link rel="canonical" href="pages-sign-in.html" />
 
-                                @error('name')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
+	<title>Register Ndururumo</title>
 
-                        <div class="row mb-3">
-                            <label for="email" class="col-md-4 col-form-label text-md-end">{{ __('Email Address') }}</label>
+	<link href="{{asset('clientsdash/css/app.css')}}" rel="stylesheet">
 
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
+	<!-- BEGIN SETTINGS -->
+	<!-- <script src="{{asset('clientsdash/js/settings.js')}}"></script> -->
+	<!-- END SETTINGS -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120946860-10"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-                                @error('email')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
+  gtag('config', 'UA-120946860-10', { 'anonymize_ip': true });
+</script></head>
+<!--
+  HOW TO USE: 
+  data-theme: default (default), dark, light
+  data-layout: fluid (default), boxed
+  data-sidebar: left (default), right
+-->
 
-                        <div class="row mb-3">
-                            <label for="password" class="col-md-4 col-form-label text-md-end">{{ __('Password') }}</label>
+<body data-theme="default" data-layout="fluid" data-sidebar="left">
+	<main class="d-flex w-100 h-100">
+		<div class="container d-flex flex-column">
+			<div class="row vh-100">
+				<div class="col-sm-10 col-md-8 col-lg-6 mx-auto d-table h-100">
+					<div class="d-table-cell align-middle">
 
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
+						<div class="text-center mt-4">
+							<h1 class="h2">NDURURUMO WATER PROJECT</h1>
+							<p class="lead">
+								Sign up to have an account
+							</p>
+						</div>
 
-                                @error('password')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
+						<div class="card">
+							<div class="card-body">
+								<div class="m-sm-4">
+									
+                                    <form method="POST" action="{{ route('register') }}">
+                                        @csrf
+										<div class="mb-3">
+											<label class="form-label">Your Names</label>
+											<input class="form-control form-control-lg" type="text" name="name" value="{{ old('name') }}" placeholder="Enter your names" />
+                                            @error('name')
+                                                <span class="invalid-feedback" role="alert">
+                                                    <strong>{{ $message }}</strong>
+                                                </span>
+                                            @enderror
+										</div>
 
-                        <div class="row mb-3">
-                            <label for="password-confirm" class="col-md-4 col-form-label text-md-end">{{ __('Confirm Password') }}</label>
 
-                            <div class="col-md-6">
-                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
-                            </div>
-                        </div>
+                                        <div class="mb-3">
+											<label class="form-label">Email</label>
+											<input class="form-control form-control-lg" type="email" name="email" value="{{ old('email') }}" placeholder="Enter your email" />
+                                            @error('email')
+                                                <span class="invalid-feedback" role="alert">
+                                                    <strong>{{ $message }}</strong>
+                                                </span>
+                                            @enderror
+										</div>
 
-                        <div class="row mb-0">
-                            <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Register') }}
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-@endsection
+										<div class="mb-3">
+											<label class="form-label">Enter Password</label>
+											<input class="form-control form-control-lg" type="password" name="password" placeholder="Enter your password" />
+                                            @error('password')
+                                                <span class="invalid-feedback" role="alert">
+                                                    <strong>{{ $message }}</strong>
+                                                </span>
+                                            @enderror
+
+										</div>
+
+                                        <div class="mb-3">
+											<label class="form-label">Confirm Password</label>
+											<input class="form-control form-control-lg" type="password" name="password_confirmation" placeholder="Enter your password" />
+                                            @error('password')
+                                                <span class="invalid-feedback" role="alert">
+                                                    <strong>{{ $message }}</strong>
+                                                </span>
+                                            @enderror
+                                            <small>
+												<a href="pages-reset-password.html">Forgot password?</a>
+											</small>
+										</div>
+										<div>
+											<label class="form-check">
+												<input class="form-check-input" type="checkbox" value="remember-me" name="remember-me" checked>
+												<span class="form-check-label">
+													Remember me next time
+												</span>
+											</label>
+										</div>
+										<div class="text-center mt-3">
+											<!-- <a href="index-2.html" class="btn btn-lg btn-primary">Sign in</a> -->
+											<button type="submit" class="btn btn-lg btn-primary">Sign Register</button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<script src="{{asset('clientsdash/js/app.js')}}"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function(event) { 
+    setTimeout(function(){
+      if(localStorage.getItem('popState') !== 'shown'){
+        window.notyf.open({
+          type: "success",
+          message: "Get access to all 500+ components and 45+ pages with AdminKit PRO. <u><a class=\"text-white\" href=\"https://adminkit.io/pricing\" target=\"_blank\">More info</a></u> 🚀",
+          duration: 10000,
+          ripple: true,
+          dismissible: false,
+          position: {
+            x: "left",
+            y: "bottom"
+          }
+        });
+
+        localStorage.setItem('popState','shown');
+      }
+    }, 15000);
+  });
+</script></body>
+
+
+<!-- Mirrored from demo.adminkit.io/pages-sign-in.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 25 Nov 2020 06:28:28 GMT -->
+</html>

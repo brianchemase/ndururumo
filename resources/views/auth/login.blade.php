@@ -45,7 +45,7 @@
 					<div class="d-table-cell align-middle">
 
 						<div class="text-center mt-4">
-							<h1 class="h2">Welcome back, Charles</h1>
+							<h1 class="h2">NDURURUMO WATER PROJECT</h1>
 							<p class="lead">
 								Sign in to your account to continue
 							</p>

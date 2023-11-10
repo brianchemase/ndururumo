@@ -54,5 +54,5 @@ Route::group(['prefix' => 'admins'], function() {
 // Route Admin
 Route::middleware(['auth','user-role:user'])->group(function()
 {
-    Route::get("/admin/home",[HomeController::class, 'adminHome'])->name("home");
+    Route::get("/admin/home",[HomeController::class, 'adminHome'])->name('home');
 });
